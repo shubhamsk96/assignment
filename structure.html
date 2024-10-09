@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Candlestick Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chartContainer { width: 80%; margin: auto; }
+        select { margin: 10px; }
+    </style>
+</head>
+<body>
+    <div id="chartContainer">
+        <select id="coinSelector">
+            <option value="ethusdt">ETH/USDT</option>
+            <option value="bnbusdt">BNB/USDT</option>
+            <option value="dotusdt">DOT/USDT</option>
+        </select>
+        <select id="intervalSelector">
+            <option value="1m">1 Minute</option>
+            <option value="3m">3 Minutes</option>
+            <option value="5m">5 Minutes</option>
+        </select>
+        <canvas id="candlestickChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
